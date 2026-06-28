@@ -1,0 +1,207 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-surface: var(--surface);
+  --color-brick: var(--brick);
+  --color-olive: var(--olive);
+  --color-saffron: var(--saffron);
+  --color-espresso: var(--espresso);
+  --color-taupe: var(--taupe);
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-button: "Poppins", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Brand colors */
+  --brick: oklch(0.502 0.139 33.2);       /* #A63F2E */
+  --olive: oklch(0.487 0.054 122.5);      /* #5E6B43 */
+  --saffron: oklch(0.737 0.124 73);       /* #D4A048 */
+  --surface: oklch(0.929 0.022 78);       /* #EFE6D8 */
+  --espresso: oklch(0.235 0.018 45);      /* #2D231E */
+  --taupe: oklch(0.474 0.012 50);         /* #6B6057 */
+
+  --background: oklch(0.976 0.012 85);    /* #FAF8F4 */
+  --foreground: oklch(0.235 0.018 45);    /* espresso */
+
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--foreground);
+
+  --primary: var(--brick);
+  --primary-foreground: oklch(0.976 0.012 85);
+  --secondary: var(--olive);
+  --secondary-foreground: oklch(0.976 0.012 85);
+
+  --muted: var(--surface);
+  --muted-foreground: var(--taupe);
+  --accent: var(--saffron);
+  --accent-foreground: var(--espresso);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.018 78);
+  --input: oklch(0.88 0.018 78);
+  --ring: var(--saffron);
+
+  --gradient-brick: linear-gradient(135deg, oklch(0.502 0.139 33.2) 0%, oklch(0.42 0.13 30) 100%);
+  --gradient-warm: linear-gradient(180deg, oklch(0.976 0.012 85) 0%, oklch(0.929 0.022 78) 100%);
+  --shadow-soft: 0 10px 40px -10px oklch(0.235 0.018 45 / 0.15);
+  --shadow-warm: 0 20px 60px -20px oklch(0.502 0.139 33.2 / 0.35);
+}
+
+.dark { --background: oklch(0.235 0.018 45); --foreground: oklch(0.976 0.012 85); }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-taupe);
+    font-family: var(--font-body);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-espresso);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+}
+
+@utility container-x {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  max-width: 80rem;
+  @media (min-width: 768px) { padding-inline: 2rem; }
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-button);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.95rem 1.75rem;
+  border-radius: 9999px;
+  background: var(--color-brick);
+  color: var(--color-background);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-warm);
+  &:hover {
+    background: oklch(0.45 0.14 32);
+    transform: translateY(-2px);
+    box-shadow: 0 25px 70px -20px oklch(0.502 0.139 33.2 / 0.5);
+  }
+}
+
+@utility btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-button);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.9rem 1.7rem;
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--color-background);
+  border: 1.5px solid oklch(1 0 0 / 0.6);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  &:hover { background: oklch(1 0 0 / 0.15); border-color: oklch(1 0 0 / 0.9); }
+}
+
+@utility btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-button);
+  font-weight: 600;
+  padding: 0.85rem 1.6rem;
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--color-brick);
+  border: 1.5px solid var(--color-brick);
+  transition: all 0.3s ease;
+  &:hover { background: var(--color-brick); color: var(--color-background); }
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-button);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-brick);
+  &::before {
+    content: "";
+    width: 1.75rem;
+    height: 1px;
+    background: var(--color-saffron);
+  }
+}
+
+@utility heading-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-espresso);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slow-zoom { from { transform: scale(1.05); } to { transform: scale(1.15); } }
+
+@utility animate-fade-up { animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@utility animate-fade-in-slow { animation: fade-in 1.2s ease-out both; }
+@utility animate-slow-zoom { animation: slow-zoom 8s ease-out both; }
