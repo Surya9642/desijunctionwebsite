@@ -95,20 +95,43 @@ export function Footer() {
 
       {/* Sub Footer Bottom Bar */}
       <div className="border-t border-background/15">
-        <div className="container-x py-6 flex flex-col sm:flex-row gap-4 items-center justify-between text-xs text-background/60">
-          <p>© {new Date().getFullYear()} Desi Junction Eatery. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            {[
-              ["Instagram", "M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.5-.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"],
-              ["Facebook", "M13 22v-8h3l1-4h-4V7.5C13 6.5 13.5 6 14.5 6H17V2h-3c-3 0-5 2-5 5v3H6v4h3v8h4z"],
-            ].map(([name, d]) => (
-              <a key={name} href="#" aria-label={name} className="grid place-items-center h-9 w-9 rounded-full bg-background/10 text-background hover:bg-saffron hover:text-espresso transition-colors">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d={d} /></svg>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+  <div className="container-x py-6 flex flex-col sm:flex-row gap-4 items-center justify-between text-xs text-background/60">
+    <p>© {new Date().getFullYear()} Desi Junction Eatery. All rights reserved.</p>
+
+    <div className="flex items-center gap-4">
+      {[
+        {
+          name: "Instagram",
+          href: "https://www.instagram.com/desijunctioneatery_wa/",
+          icon: "M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.5-.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+        },
+        {
+          name: "Facebook",
+          href: "https://www.facebook.com/desijunctioneaterywa/",
+          icon: "M13 22v-8h3l1-4h-4V7.5C13 6.5 13.5 6 14.5 6H17V2h-3c-3 0-5 2-5 5v3H6v4h3v8h4z",
+        },
+      ].map((social) => (
+        <a
+          key={social.name}
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.name}
+          className="grid place-items-center h-9 w-9 rounded-full bg-background/10 text-background hover:bg-saffron hover:text-espresso transition-colors duration-300"
+        >
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d={social.icon} />
+          </svg>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
     </footer>
   );
 }
