@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { SiteLayout } from "@/components/site/Layout";
 import { OrderButton } from "@/components/site/OrderButton";
-import { PHONES, ADDRESS_LINE1, ADDRESS_LINE2, ORDER_URL, MAP_EMBED_URL, MAP_LINK } from "@/lib/constants";
+import { PHONES, ADDRESS_LINE1, ADDRESS_LINE2, ORDER_URL, MAP_LINK } from "@/lib/constants";
 
 
 export default function Contact() {
@@ -127,15 +127,17 @@ export default function Contact() {
             </div>
           </form>
 
-          <div className="rounded-2xl overflow-hidden border border-border/60 min-h-[480px]">
-            <iframe
-              title="Map to Desi Junction Eatery — 1624 145th Pl SE, Bellevue, WA 98007"
-              src={MAP_EMBED_URL}
-              className="w-full h-full min-h-[480px]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <div className="rounded-2xl overflow-hidden border border-border/60 h-[480px] w-full shadow-sm">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.570067105134!2d-122.15173032360761!3d47.59560397118884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d28dac6b4cb%3A0x10b74dd193877362!2sDesi%20Junction%20Eatery!5e0!3m2!1sen!2sin!4v1782663783995!5m2!1sen!2sin" 
+    className="w-full h-full"
+    style={{ border: 0 }} 
+    allowFullScreen
+    loading="lazy" 
+    referrerPolicy="strict-origin-when-cross-origin"
+    title="Desi Junction Eatery Location Map"
+  />
+</div>
         </div>
       </section>
     </SiteLayout>

@@ -24,7 +24,7 @@ export const MENU: MenuCategory[] = [
         "price": 5.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image":"/menu/Hot_and_Sour_Soup.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/hot-sour-soup-6848GSAV149PA"
       },
       {
@@ -32,7 +32,7 @@ export const MENU: MenuCategory[] = [
         "price": 5.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Lemon_Cilantro_Soup.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/lemon-cilantro-Z1FVTKNJRMX0W"
       },
       {
@@ -40,7 +40,7 @@ export const MENU: MenuCategory[] = [
         "price": 6.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image":"/menu/Manchow_Soup.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/manchow-soup-0W6C0M4WEAZYY"
       }
     ]
@@ -62,7 +62,7 @@ export const MENU: MenuCategory[] = [
         "price": 10.99,
         "available": true,
         "description": "Crunchy corn kernels deep-fried to perfection and dusted with a signature blend of spices, chaat masala, onions and a zesty squeeze of lime",
-        "image": "https://cloverstatic.com/menu-assets/items/02A2ATG8JFPG2_1500x1125.jpeg?v=1778623557019",
+        "image": "/menu/crispy_corn.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/crispy-corn-02A2ATG8JFPG2"
       },
       {
@@ -86,7 +86,7 @@ export const MENU: MenuCategory[] = [
         "price": 12.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Veg_Lollipop.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/veg-lollipop4-pcs-TYN7M237RPKGG"
       },
       {
@@ -134,7 +134,7 @@ export const MENU: MenuCategory[] = [
         "price": 9.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Samosa_Chat.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/samosa-chat-Y4SFMYNBJW1ER"
       },
       {
@@ -156,7 +156,7 @@ export const MENU: MenuCategory[] = [
         "price": 5.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Vegetable_Samosa.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/vegetable-samosa-2-pcs-48VHWRHM0WP62"
       },
       {
@@ -164,7 +164,7 @@ export const MENU: MenuCategory[] = [
         "price": 5.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Onion_Samosa.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/onion-samosa-5-pcs-HWQM73DRG60GP"
       },
       {
@@ -202,7 +202,7 @@ export const MENU: MenuCategory[] = [
         "price": 12.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/6DFY69N5ZAQC6_1500x1125.jpeg?v=1779486366801",
+        "image": "/menu/lollipop.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-lollipop4-pcs-6DFY69N5ZAQC6"
       },
       {
@@ -314,7 +314,7 @@ export const MENU: MenuCategory[] = [
         "price": 12.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/9M3GG1QT2FW5E_1500x1125.jpeg?v=1779486403251",
+        "image": "/menu/chilli_chicken_wings.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chilli-chicken-wings-4-pcs-9M3GG1QT2FW5E"
       },
       {
@@ -362,7 +362,7 @@ export const MENU: MenuCategory[] = [
         "price": 9.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Chicken_Chips.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-chips-4-pcs-G13DGB65FCRK2"
       },
       {
@@ -370,7 +370,7 @@ export const MENU: MenuCategory[] = [
         "price": 9.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Chicken_Ghee_Roast_Wings.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-ghee-roast-wings-4-pcs-MNKPF42MFM8H2"
       }
     ]
@@ -772,7 +772,7 @@ export const MENU: MenuCategory[] = [
         "price": 8.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/AMX740Q9WKR88_1500x1125.jpeg?v=1779486656871",
+        "image": "/menu/punugulu.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/punugulu-10-pcs-AMX740Q9WKR88"
       },
       {
@@ -788,7 +788,7 @@ export const MENU: MenuCategory[] = [
         "price": 13.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/N95TNGFYTV89P_1500x1125.jpeg?v=1778275026025",
+        "image": "/menu/sabudana_vada.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/sabudana-vada-N95TNGFYTV89P"
       },
       {
@@ -812,7 +812,7 @@ export const MENU: MenuCategory[] = [
         "price": null,
         "available": false,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/T103PF92867MM_1500x1125.jpeg?v=1779486621064",
+        "image": "/menu/vada_pav.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/vada-pav-T103PF92867MM"
       },
       {
@@ -852,7 +852,7 @@ export const MENU: MenuCategory[] = [
         "price": null,
         "available": false,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/7W90HPMYW9HWW_1500x1125.jpeg?v=1778275121313",
+        "image": "/menu/masala_vada.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/masala-vada-4-pcs-7W90HPMYW9HWW"
       },
       {
@@ -868,7 +868,7 @@ export const MENU: MenuCategory[] = [
         "price": 8.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Egg_Bonda.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/egg-bonda-2-pcs-PB95P19HNXZ36"
       },
       {
@@ -884,7 +884,7 @@ export const MENU: MenuCategory[] = [
         "price": 14.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image":"/menu/Cheese_Mirchi_Bhaji.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/cheese-mirchi-bhaji-4-pcs-1CVV87R9TZ4AY"
       },
       {
@@ -1478,7 +1478,7 @@ export const MENU: MenuCategory[] = [
         "price": 16.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Chicken_Joint_Fry_Pulav.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-joint-pulav-regular-HKSYMDYEMQ074"
       },
       {
@@ -1518,7 +1518,7 @@ export const MENU: MenuCategory[] = [
         "price": 16.49,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Chicken_Ghee_Roast_Wings_Pulav.jgp",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-ghee-roast-pulav-regular-8WCNBYRB69STR"
       },
       {
@@ -1738,7 +1738,7 @@ export const MENU: MenuCategory[] = [
         "price": 16.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/RBAJFXWQVE0J2_1500x1125.jpeg?v=1779486540324",
+        "image": "/menu/Techa_Paneer_Kabab.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/techa-panner-kabab-RBAJFXWQVE0J2"
       },
       {
@@ -1746,7 +1746,7 @@ export const MENU: MenuCategory[] = [
         "price": 12.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/PR7HJA652FZPR_1500x1125.jpeg?v=1779486503836",
+        "image": "/menu/Harabara_Kebab.jpeg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/harabara-kabab-PR7HJA652FZPR"
       },
       {
@@ -1754,7 +1754,7 @@ export const MENU: MenuCategory[] = [
         "price": 15.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/70SXX5B4SKY8P_1500x1125.jpeg?v=1780861101672",
+        "image": "/menu/tandoori_momos.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/tandoori-momos-70SXX5B4SKY8P"
       },
       {
@@ -1778,7 +1778,7 @@ export const MENU: MenuCategory[] = [
         "price": 15.99,
         "available": true,
         "description": null,
-        "image": null,
+        "image": "/menu/Malai_Soya_Chaap.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/malai-soya-chaap-9EJ48PDQHEH1Y"
       },
       {
@@ -1840,7 +1840,7 @@ export const MENU: MenuCategory[] = [
         "price": 14.99,
         "available": true,
         "description": null,
-        "image": "https://cloverstatic.com/menu-assets/items/PCPN9Z6RB72A0_1500x1125.jpeg?v=1779486463911",
+        "image": "/menu/Chicken_Seekh_Kabab.jpg",
         "url": "https://desijunctioneaterywa.cloveronline.com/menu/chicken-seekh-kabab-PCPN9Z6RB72A0"
       },
       {
